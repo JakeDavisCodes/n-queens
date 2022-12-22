@@ -16,6 +16,48 @@
 
 
 window.findNRooksSolution = function(n) {
+
+  var newBoard = new Board({n: 5});
+
+  newBoard.attributes[0][0] = 1;
+
+  console.log(newBoard);
+  // console.log(1);
+  // console.log(newBoard.get(0)[0]);
+
+  /*
+
+  helperFunc = function (board)
+    if conflicts
+      prune
+    if n pieces
+      solution
+
+    creates a list of possible boards
+
+    for let i = 0; < n; i++
+      for let j = 0; j < n; j++
+        if (board.get(i)[j] === 1)
+          lastPos = {row: i, col: j}
+    lastPos = lastPos || {row: 0, col: -1}
+    possibleBoards = [];
+
+
+    for let i = lastPos.row; < n; i++
+      for let j = lastPos.col + 1; j < n; j++
+
+
+      forEach possible
+        return helperFunc(possible[i]);
+  [0, 0, 0]
+  [0, 0, 0]
+  [0, 0, 0]
+
+  */
+
+
+
+
   var solution = undefined; //fixme
 
   console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
