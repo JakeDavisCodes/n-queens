@@ -96,11 +96,8 @@
       for (let i = 0; i < this.attributes.n; i++) {
         if (this.hasRowConflictAt(i)) {
           return true;
-
         }
-
-      }
-      return false;
+      } return false;
     },
 
 
@@ -153,14 +150,12 @@
 
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
+      console.log(100);
       for (let i = 0; i < this.attributes.n; i++) {
         // debugger;
         if (this.hasMajorDiagonalConflictAt(i, 0)) {
           return true;
         }
-      }
-      for (let i = 0; i < this.attributes.n; i++) {
-        // debugger;
         if (this.hasMajorDiagonalConflictAt(0, i)) {
           return true;
         }
